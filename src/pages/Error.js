@@ -4,7 +4,7 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 const Error = () => {
   return (
-    <Hero hero="defaultHero">
+    <Hero hero="errorHero">
       <Banner title="404" subtitle="page not found">
         <Link to="/" className="btn-primary">
           return home

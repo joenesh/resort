@@ -26,8 +26,8 @@ const Profile = () => {
         </section>
       </>
     ) : (
-      <Hero hero="defaultHero">
-        <Banner title="Not Logged In" subtitle="Please login to continue">
+      <Hero hero="errorHero">
+        <Banner title="No User" subtitle="Please login to continue">
           <button onClick={() => loginWithRedirect()} className="btn-primary">
             Login
           </button>

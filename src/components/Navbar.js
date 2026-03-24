@@ -33,7 +33,7 @@ class Navbar extends Component {
             <Link to="/">
               {user?.picture ? (
                 <div className="nav-profile">
-                  <img src={user.picture} alt={user?.name} className="profile-img" onClick={this.handleLogout} />
+                  <img src={user.picture} alt={user?.name} className="profile-img" />
                   <img src={logo} alt="Beach Resort" />
                 </div>
               ) : (
@@ -53,7 +53,7 @@ class Navbar extends Component {
             </li>
             <li>
               {isAuthenticated ? (
-                <Link to="/profile" onClick={this.handleToggle}>{user?.name}</Link>
+                <Link onClick={this.handleLogout}>Logout</Link>
               ) : (
                 <Link onClick={this.handleLogin}>Login</Link>
               )}
